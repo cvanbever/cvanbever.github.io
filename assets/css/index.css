@@ -6,6 +6,10 @@ body {
     color: #555;
 }
 
+ul {
+  padding: 0px;
+}
+
 .profile .profile-picture {
     display: block;
     position: relative;
@@ -82,6 +86,11 @@ footer {
 }
 .navigation > li {
     font-size: 16px;
+}
+
+.navigation > li > a {
+    font-size: 16px;
+    text-decoration: none;
 }
 
 .profile-description {
