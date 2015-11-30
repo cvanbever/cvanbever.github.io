@@ -1,29 +1,54 @@
 <!DOCTYPE html>
-	<html>
-		<head>
-			<title>{{ page.title }}</title>
-			<!-- link to main stylesheet -->
-			<link rel="stylesheet" type="text/css" href="/css/main.css">
-		</head>
-		<body>
-			<nav>
-	    		<ul>
-	        		<li><a href="/">Home</a></li>
-		        	<li><a href="/about">About</a></li>
-	        		<li><a href="/cv">CV</a></li>
-	        		<li><a href="/blog">Blog</a></li>
-	    		</ul>
-			</nav>
+	<html lang="en">
+	    <head>
+		      <meta charset="UTF-8"/>
+	        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	      	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	        <title>{{ page.title }}</title>
+	        <meta name="description" content="Cécilia Van Bever - Resume and images gallery"/>
+	        <meta name="keywords" content="html5, responsive, image gallery, resume, masonry, picture, images, sizes, fluid, history api, visibility api"/>
+	        <meta name="author" content="Cécilia Van Bever"/>
+	        <!-- Latest compiled and minified CSS -->
+
+	        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+	        <!-- jQuery library -->
+	        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	        <!-- Latest compiled JavaScript -->
+	        <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+	    		<!--[if lte IE 7]><style>.main{display:none;} .support-note .note-ie{display:block;}</style><![endif]-->
+	        <link rel="stylesheet" type="text/css" href="./css/main.css">
+	    </head>
+	    <body>
+
+			<header>
+      </header>
+
+			<div class="sidebar">
+        <aside class="profile">
+          <img class="profile-picture" src="./images/me2.jpg" alt="my picture"> </img>
+          <h2> Cécilia </br> Van Bever </h2>
+          <p> <a href="mailto:ceciliavanbever@gmail.com">email</a> </br>
+						<a href="https://github.com/cvanbever">github.com/cvanbever</a> </br>
+						I'm a web developer and ...</p>
+        </aside>
+        <nav>
+          <ul class="navigation">
+            <li class="home">
+              <a href="/">Home</a>
+            </li>
+            <li>
+              <a class="nav-gallery" href="/myGallery"> My travel gallery </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+
 			<div class="container">
-			
+
 			{{ content }}
-			
+
 			</div><!-- /.container -->
 			<footer>
-	    		<ul>
-	        		<li><a href="mailto:ceciliavanbever@gmail.com">email</a></li>
-	        		<li><a href="https://github.com/cvanbever">github.com/cvanbever</a></li>
-				</ul>
-			</footer>
-		</body>
-	</html>
+      </footer>
+    </body>
+</html>

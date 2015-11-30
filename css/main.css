@@ -1,0 +1,70 @@
+body {
+    font-family: "Fira Sans",sans-serif;
+    background: #E3E3E3 none repeat scroll 0% 0%;
+    font-size: 16px;
+    line-height: 26px;
+    color: #555;
+}
+
+.profile .profile-picture {
+    display: block;
+    position: relative;
+    margin: 5px auto;
+    border: 5px solid #FFF;
+    border-radius: 50%;
+    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.3);
+    transition: all 0.2s ease-out 0s;
+}
+
+.sidebar {
+    padding: 0px 10px;
+    background: #FFF none repeat scroll 0% 0%;
+    color: #555;
+    z-index: 10;
+    text-align: center;
+    box-shadow: 2px 0px 6px 0px rgba(0, 0, 0, 0.2);
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 220px;
+    height: 100%;
+    min-height: 650px;
+    padding: 0px 20px;
+    border-right: 3px solid rgb(255, 126, 130);
+}
+
+.profile h2 {
+    color: #333;
+    text-align: center;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    margin-bottom: 5px;
+}
+
+.content {
+    margin-left: 220px;
+    /*background-color: */
+}
+
+.profile-info {
+    max-width: auto;
+    margin: 20px;
+    background: #FFF none repeat scroll 0% 0%;
+    border: 1px solid #DDD;
+}
+
+.profile-header {
+    margin: 0px;
+    padding:20px;
+}
+
+.aboutMe {
+    padding: 10px 25px 0px;
+}
+
+footer {
+    position: relative;
+    bottom:0;
+    width:100%;
+    background-color: rgb(255, 126, 130);
+    height:20px;
+}
