@@ -8,15 +8,20 @@
 	        <meta name="description" content="Cécilia Van Bever - Resume and images gallery"/>
 	        <meta name="keywords" content="html5, responsive, image gallery, resume, masonry, picture, images, sizes, fluid, history api, visibility api"/>
 	        <meta name="author" content="Cécilia Van Bever"/>
+					<link rel="shortcut icon" href="../favicon.ico">
 	        <!-- Latest compiled and minified CSS -->
-
 	        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
 	        <!-- jQuery library -->
 	        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 	        <!-- Latest compiled JavaScript -->
 	        <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 	    		<!--[if lte IE 7]><style>.main{display:none;} .support-note .note-ie{display:block;}</style><![endif]-->
-	        <link rel="stylesheet" type="text/css" href="./css/main.css">
+					<script src="js/modernizr.custom.70736.js"></script>
+
+	        <link rel="stylesheet" type="text/css" href="../assets/css/main.css">
+					<link rel="stylesheet" type="text/css" href="../assets/css/demo.css">
+					<noscript><link rel="stylesheet" type="text/css" href="css/noJS.css"/></noscript>
+					<link rel="stylesheet" type="text/css" href="../assets/css/style.css">
 	    </head>
 	    <body>
 
@@ -25,7 +30,7 @@
 
 			<div class="sidebar">
         <aside class="profile">
-          <img class="profile-picture" src="./images/me2.jpg" alt="my picture"> </img>
+          <img class="profile-picture" src="./assets/images/me2.jpg" alt="my picture"> </img>
           <h2> Cécilia </br> Van Bever </h2>
           <p> <a href="mailto:ceciliavanbever@gmail.com">email</a> </br>
 						<a href="https://github.com/cvanbever">github.com/cvanbever</a> </br>
@@ -50,5 +55,68 @@
 			</div><!-- /.container -->
 			<footer>
       </footer>
+
+			<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+			<script src="../assets/javascripts/jquery.masonry.min.js"></script>
+			<script src="../assets/javascripts/jquery.history.js"></script>
+			<script src="../assets/javascripts/js-url.min.js"></script>
+			<script src="../assets/javascripts/jquerypp.custom.js"></script>
+			<script src="../assets/javascripts/gamma.js"></script>
+			<script type="text/javascript">
+
+				$(function() {
+
+					var GammaSettings = {
+							// order is important!
+							viewport : [ {
+								width : 1200,
+								columns : 5
+							}, {
+								width : 900,
+								columns : 4
+							}, {
+								width : 500,
+								columns : 3
+							}, {
+								width : 320,
+								columns : 2
+							}, {
+								width : 0,
+								columns : 2
+							} ]
+					};
+
+					Gamma.init( GammaSettings, fncallback );
+
+
+					// Example how to add more items (just a dummy):
+
+					var page = 0,
+						items = ['<li><div data-alt="img03" data-description="<h3>Sky high</h3>" data-max-width="1800" data-max-height="1350"><div data-src="images/xxxlarge/3.jpg" data-min-width="1300"></div><div data-src="images/xxlarge/3.jpg" data-min-width="1000"></div><div data-src="images/xlarge/3.jpg" data-min-width="700"></div><div data-src="images/large/3.jpg" data-min-width="300"></div><div data-src="images/medium/3.jpg" data-min-width="200"></div><div data-src="images/small/3.jpg" data-min-width="140"></div><div data-src="images/xsmall/3.jpg"></div><noscript><img src="images/xsmall/3.jpg" alt="img03"/></noscript></div></li><li><div data-alt="img03" data-description="<h3>Sky high</h3>" data-max-width="1800" data-max-height="1350"><div data-src="images/xxxlarge/3.jpg" data-min-width="1300"></div><div data-src="images/xxlarge/3.jpg" data-min-width="1000"></div><div data-src="images/xlarge/3.jpg" data-min-width="700"></div><div data-src="images/large/3.jpg" data-min-width="300"></div><div data-src="images/medium/3.jpg" data-min-width="200"></div><div data-src="images/small/3.jpg" data-min-width="140"></div><div data-src="images/xsmall/3.jpg"></div><noscript><img src="images/xsmall/3.jpg" alt="img03"/></noscript></div></li><li><div data-alt="img03" data-description="<h3>Sky high</h3>" data-max-width="1800" data-max-height="1350"><div data-src="images/xxxlarge/3.jpg" data-min-width="1300"></div><div data-src="images/xxlarge/3.jpg" data-min-width="1000"></div><div data-src="images/xlarge/3.jpg" data-min-width="700"></div><div data-src="images/large/3.jpg" data-min-width="300"></div><div data-src="images/medium/3.jpg" data-min-width="200"></div><div data-src="images/small/3.jpg" data-min-width="140"></div><div data-src="images/xsmall/3.jpg"></div><noscript><img src="images/xsmall/3.jpg" alt="img03"/></noscript></div></li><li><div data-alt="img03" data-description="<h3>Sky high</h3>" data-max-width="1800" data-max-height="1350"><div data-src="images/xxxlarge/3.jpg" data-min-width="1300"></div><div data-src="images/xxlarge/3.jpg" data-min-width="1000"></div><div data-src="images/xlarge/3.jpg" data-min-width="700"></div><div data-src="images/large/3.jpg" data-min-width="300"></div><div data-src="images/medium/3.jpg" data-min-width="200"></div><div data-src="images/small/3.jpg" data-min-width="140"></div><div data-src="images/xsmall/3.jpg"></div><noscript><img src="images/xsmall/3.jpg" alt="img03"/></noscript></div></li><li><div data-alt="img03" data-description="<h3>Sky high</h3>" data-max-width="1800" data-max-height="1350"><div data-src="images/xxxlarge/3.jpg" data-min-width="1300"></div><div data-src="images/xxlarge/3.jpg" data-min-width="1000"></div><div data-src="images/xlarge/3.jpg" data-min-width="700"></div><div data-src="images/large/3.jpg" data-min-width="300"></div><div data-src="images/medium/3.jpg" data-min-width="200"></div><div data-src="images/small/3.jpg" data-min-width="140"></div><div data-src="images/xsmall/3.jpg"></div><noscript><img src="images/xsmall/3.jpg" alt="img03"/></noscript></div></li>']
+
+					function fncallback() {
+
+						$( '#loadmore' ).show().on( 'click', function() {
+
+							++page;
+							var newitems = items[page-1]
+							if( page <= 1 ) {
+
+								Gamma.add( $( newitems ) );
+
+							}
+							if( page === 1 ) {
+
+								$( this ).remove();
+
+							}
+
+						} );
+
+					}
+
+				});
+
+			</script>
     </body>
 </html>
