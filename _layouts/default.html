@@ -18,8 +18,8 @@
 	    		<!--[if lte IE 7]><style>.main{display:none;} .support-note .note-ie{display:block;}</style><![endif]-->
 					<script src="../assets/javascripts/modernizr.custom.70736.js"></script>
 
-	        <link rel="stylesheet" type="text/css" href="../assets/css/main.css">
-					<link rel="stylesheet" type="text/css" href="../assets/css/demo.css">
+					<link rel="stylesheet" href="../assets/css/index.css" type="text/css" />
+					{% if page.css %}<link rel="stylesheet" href="../assets/css/{{ page.css }}.css" type="text/css" />{% endif %}
 					<noscript><link rel="stylesheet" type="text/css" href="css/noJS.css"/></noscript>
 					<link rel="stylesheet" type="text/css" href="../assets/css/style.css">
 	    </head>
@@ -32,27 +32,35 @@
         <aside class="profile">
           <img class="profile-picture" src="./assets/images/me2.jpg" alt="my picture"> </img>
           <h2> Cécilia </br> Van Bever </h2>
-          <p> <a href="mailto:ceciliavanbever@gmail.com">email</a> </br>
-						<a href="https://github.com/cvanbever">github.com/cvanbever</a> </br>
-						I'm a web developer and ...</p>
+					<ul class="profile-links">
+						<li> <a href="mailto:ceciliavanbever@gmail.com" target="_blank">
+							<img alt="email" class="glyphi" src="./assets/images/email.svg"></img>
+						</a></li>
+						<li> <a href="https://github.com/cvanbever" target="_blank">
+							<img alt="github" class="glyphi" src="./assets/images/github.svg"></img>
+						</a></li>
+						<li> <a href="http://www.linkedin.com/in/ceciliavanbever/fr" target="_blank">
+							<img alt="linkedin" class="glyphi" src="./assets/images/linkedin.svg"></img>
+						</a></li>
+					</ul>
+          <p class="profile-description">
+						I'm a web developer from France and I love the design, ...
+					</p>
         </aside>
         <nav>
           <ul class="navigation">
             <li class="home">
-              <a href="/">Home</a>
+              <a href="/"><span class="glyphicon glyphicon-home"></span>Home</a>
             </li>
             <li>
-              <a class="nav-gallery" href="/myGallery"> My travel gallery </a>
+              <a class="nav-gallery" href="/myGallery"><span class="glyphicon glyphicon-send"></span>My travel gallery </a>
             </li>
           </ul>
         </nav>
       </div>
 
-			<div class="container">
-
 			{{ content }}
 
-			</div><!-- /.container -->
 			<footer>
       </footer>
 

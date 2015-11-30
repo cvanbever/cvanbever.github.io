@@ -38,6 +38,7 @@ body {
     text-align: center;
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
     margin-bottom: 5px;
+    padding-bottom: 15px;
 }
 
 .content {
@@ -67,4 +68,36 @@ footer {
     width:100%;
     background-color: rgb(255, 126, 130);
     height:20px;
+}
+
+.navigation {
+  list-style-type: none;
+  text-align: left;
+  margin-left: 10px;
+}
+
+.glyphicon {
+  margin: 10px;
+  color: rgb(255, 126, 130);
+}
+.navigation > li {
+    font-size: 16px;
+}
+
+.profile-description {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.profile-links > li > a > img {
+    height: 2.5em;
+    opacity: 0.7;
+}
+
+.profile-links > li {
+    display: inline;
+
+}
+.profile-links > li > a {
+  background: transparent none repeat scroll 0% 0%;
+  text-decoration: none;
 }
