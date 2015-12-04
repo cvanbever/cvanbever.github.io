@@ -13,7 +13,7 @@ ul {
 .profile .profile-picture {
     display: block;
     position: relative;
-    margin: 5px auto;
+    margin:15px auto;
     border: 5px solid #FFF;
     border-radius: 50%;
     box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.3);
@@ -22,18 +22,18 @@ ul {
 
 .sidebar {
     padding: 0px 10px;
-    background: #fff url("../images/background-image.jpg") no-repeat 0% 0%;
+    background: #fff url("../images/background-image.jpg") no-repeat scroll 0% 0%;
     background-size: cover;
     color: #fff;
     z-index: 10;
     text-align: center;
     box-shadow: 2px 0px 6px 0px rgba(0, 0, 0, 0.2);
     position: fixed;
+    overflow-y: auto;
     left: 0px;
     top: 0px;
     width: 220px;
     height: 100%;
-    min-height: 650px;
     padding: 0px 20px;
     border-right: 3px solid rgb(255, 126, 130);
 }
@@ -66,17 +66,18 @@ ul {
 }
 
 footer {
-    position: fixed;
+    position: relative;
     bottom:0;
     left:0;
     width:100%;
     background-color: rgb(255, 126, 130);
-    height:20px;
+    height:30px;
 }
-/* IE 6 */
-* html footer {
-   position:absolute;
-   top:expression((0-(footer.offsetHeight)+(document.documentElement.clientHeight ? document.documentElement.clientHeight : document.body.clientHeight)+(ignoreMe = document.documentElement.scrollTop ? document.documentElement.scrollTop : document.body.scrollTop))+'px');
+
+#footer {
+  float: right;
+  color: #fff;
+  margin-right: 10px;
 }
 
 .navigation {
@@ -89,6 +90,7 @@ footer {
 .profile-links {
   padding: 10px;
 }
+
 
 .glyphicon {
   margin: 10px;
@@ -111,6 +113,7 @@ footer {
 }
 
 .profile-description {
+  padding-bottom: 10px;
   border-bottom: 1px solid rgba(255, 253, 253, 0.37);
   opacity: 0.7;
 }
@@ -137,6 +140,11 @@ footer {
   background: transparent none repeat scroll 0% 0%;
   text-decoration: none;
 }
+
+.profile-links > li > a:hover > img {
+  opacity: 1;
+}
+
 .profile-header {
     margin: 0px;
     padding:20px;
@@ -165,7 +173,7 @@ h2.profile-header:after {
     margin-right: -50%;
 }
 
-.resumeDownload a {
+.resumeLink {
   text-decoration: none;
   color: rgb(255, 126, 130);
 }
@@ -192,8 +200,9 @@ h2.profile-header:after {
 .resumeDownload:hover {
   background-color: rgb(255, 126, 130);
 }
-.resumeDownload:hover a {
+.resumeLink:hover {
   color: #fff;
+  text-decoration: none;
 }
 
 .work {
@@ -204,15 +213,73 @@ h2.profile-header:after {
   text-align: center;
 }
 
-/*.logo {
-  width: 30%;
-  float:left;
+.pictureLogo, .pictureLogoEdu {
+  width: 90%;
+  margin-top: 30px;
 }
 
-.pictureLogo {
-  width: 100%;
+.pictureLogoEdu {
+  margin-left: 30px;
 }
 
-.descriptWork {
-  float:left;
-}*/
+.societyName a, .societyName {
+  color: #4285F4;
+}
+
+.societyName a {
+  font-weight: bold;
+}
+
+.societyName a:hover {
+  color: #0B2A4A;
+  text-decoration: none;
+  font-style: bold;
+}
+
+.city {
+  color: rgb(255, 126, 130);
+}
+
+#sjtu > div > a > img {
+  width: auto;
+  height: 135px;
+  margin-top: 0px;
+}
+.skills {
+  margin-left: 30px;
+}
+.skills > h3 {
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+.dev {
+  display: -webkit-flex; /* Safari */
+  -webkit-flex-direction: row-reverse; /* Safari 6.1+ */
+  display: flex;
+  flex-direction: row;
+}
+
+.dev > li > img {
+  max-height: 80px;
+}
+
+.dev > li {
+    display: inline;
+    background-color: #FFF;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 3px 1px -2px rgba(0, 0, 0, 0.2), 0px 1px 5px 0px rgba(0, 0, 0, 0.12);
+    margin: 0px 10px 10px 0px;
+    max-width: 100px;
+}
+
+.skillCardFooter {
+    flex: 1 0 auto;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    text-align: center;
+    line-height: 18px;
+    font-size: 16px;
+    font-weight: 400;
+    color: #616161;
+}

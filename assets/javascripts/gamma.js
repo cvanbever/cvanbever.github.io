@@ -372,7 +372,7 @@ var Gamma = (function() {
 			// this will trigger the statechange on the window
 			else if( History.getState().url.queryStringToJSON().id !== id ) {
 
-				History.pushState( null, null, url('protocol') + '://' + url('hostname') + url('path')+'?id=' + id );
+				History.pushState( null, null, '?id=' + id );
 
 			}
 
