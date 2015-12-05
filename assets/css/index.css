@@ -58,11 +58,25 @@ ul {
     border: 1px solid #DDD;
 }
 
-
-
 .aboutMe {
     padding: 10px 25px 20px;
-    text-align: center;
+    text-align: justify;
+}
+
+.aboutMe a {
+    color: rgb(20, 51, 137);
+    text-decoration: underline;
+}
+.aboutMe a:hover {
+    color: #333;
+}
+
+.quote {
+  text-align: center;
+}
+
+.contactMe {
+  text-align: center;
 }
 
 footer {
@@ -110,6 +124,7 @@ footer {
   font-size: 16px;
   text-decoration: none;
   color:#fff;
+  display: block;
 }
 
 .profile-description {
@@ -173,13 +188,19 @@ h2.profile-header:after {
     margin-right: -50%;
 }
 
+.myResume {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+
 .resumeLink {
   text-decoration: none;
   color: rgb(255, 126, 130);
 }
 
 .resumeDownload {
-  padding: 7px 16px;
+  padding: 12px 24px;
   font-size: 12px;
   font-family: "proxima-nova","Helvetica Neue",Helvetica,Arial,sans-serif;
   text-transform: uppercase;
@@ -197,12 +218,13 @@ h2.profile-header:after {
   margin: auto;
 }
 
-.resumeDownload:hover {
+.resumeDownload:hover, .resumeDownload:focus{
   background-color: rgb(255, 126, 130);
 }
-.resumeLink:hover {
+.resumeLink:hover, .resumeLink:focus{
   color: #fff;
   text-decoration: none;
+  display: block;
 }
 
 .work {
