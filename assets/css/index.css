@@ -44,6 +44,7 @@ ul {
     border-bottom: 1px solid rgba(255, 253, 253, 0.37);
     margin-bottom: 5px;
     padding-bottom: 15px;
+    font-size: 23px;
 }
 
 .content {
@@ -227,7 +228,7 @@ h2.profile-header:after {
   display: block;
 }
 
-.work {
+.work, .education {
   margin: 20px;
 }
 
@@ -238,6 +239,7 @@ h2.profile-header:after {
 .pictureLogo, .pictureLogoEdu {
   width: 90%;
   margin-top: 30px;
+  max-width: 300px;
 }
 
 .pictureLogoEdu {
@@ -278,7 +280,7 @@ h2.profile-header:after {
   display: -webkit-flex; /* Safari */
   -webkit-flex-direction: row-reverse; /* Safari 6.1+ */
   display: flex;
-  flex-direction: row;
+  flex-flow: row wrap;
 }
 
 .dev > li > img {
@@ -304,4 +306,71 @@ h2.profile-header:after {
     font-size: 16px;
     font-weight: 400;
     color: #616161;
+}
+
+.icon-bar {
+  background-color: #000;
+}
+
+#navbarLittle {
+  display: none;
+}
+
+@media screen and (max-width: 767px) {
+  .sidebar {
+    position: relative;
+    height: 250px;
+    width: 100%;
+    padding-top: 10px;
+    border-right: none;
+    background-color: #3A4151;
+  }
+  .content {
+    margin-left: 0px;
+  }
+
+  .profile-picture{
+    height: 90px;
+  }
+
+  .profile h2 {
+    font-size: 20px;
+  }
+
+  .profile p {
+    display: none;
+  }
+
+ #navbarLittle {
+    display: block;
+    background-color: #3A4151;
+  }
+
+  .navigation {
+    margin-left: 0px;
+  }
+
+  .navigation > li.active {
+    border-radius: 0px;
+    background-color: rgb(34, 34, 34);
+  }
+  .navigation > li:hover {
+    background-color: rgb(34, 34, 34);
+  }
+  .navigation > li {
+    padding-left: 20px;
+  }
+
+}
+
+@media screen and (max-width: 600px) {
+
+  .profile .profile-picture {
+    display:none;
+  }
+
+  .sidebar {
+    height: 145px;
+  }
+
 }

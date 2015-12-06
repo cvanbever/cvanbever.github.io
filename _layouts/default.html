@@ -17,7 +17,7 @@
 	        <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 	    		<!--[if lte IE 7]><style>.main{display:none;} .support-note .note-ie{display:block;}</style><![endif]-->
 					<script src="../assets/javascripts/modernizr.custom.70736.js"></script>
-
+					<script src="../assets/javascripts/default.js"></script>
 					<link rel="stylesheet" href="../assets/css/index.css" type="text/css" />
 					{% if page.css %}<link rel="stylesheet" href="../assets/css/{{ page.css }}.css" type="text/css" />{% endif %}
 					<noscript><link rel="stylesheet" type="text/css" href="../assets/css/noJS.css"/></noscript>
@@ -28,14 +28,17 @@
 			<header>
       </header>
 
+		<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navLittleSize" aria-expanded="false">
+			<span class="sr-only">Toggle navigation</span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+		</button>
 		<div class="sidebar">
       <aside class="profile">
         <img class="profile-picture" src="./assets/images/me2.jpg" alt="my picture"> </img>
-        <h2> Cécilia </br> Van Bever </h2>
+        <h2> Cécilia Van Bever </h2>
 				<ul class="profile-links">
-					<li> <a href="mailto:ceciliavanbever@gmail.com" target="_blank">
-						<img alt="email" class="glyphi" src="./assets/images/email.png"></img>
-					</a></li>
 					<li> <a href="https://github.com/cvanbever" target="_blank">
 						<img alt="github" class="glyphi" id="github" src="./assets/images/github.png"></img>
 					</a></li>
@@ -48,7 +51,7 @@
 				</p>
       </aside>
 
-      <nav>
+      <nav class="collapse navbar-collapse" role="navigation" id="navBar">
         <ul class="navigation">
           <li {% if page.urlPage == '/' %} class='active'{% endif %}>
             <a href="/" ><span class="glyphicon glyphicon-home"></span>About</a>
@@ -60,6 +63,18 @@
       </nav>
   	</div>
 
+		<div id="navbarLittle">
+			<nav class="collapse" role="navigation" id="navLittleSize">
+				<ul class="navigation">
+					<li {% if page.urlPage == '/' %} class='active'{% endif %}>
+						<a href="/" ><span class="glyphicon glyphicon-home"></span>About</a>
+					</li>
+					<li class="hidden" {% if page.urlPage == '/myGallery'%} class='active'{% endif %}>
+						<a class="nav-gallery" href="/myGallery"><span class="glyphicon glyphicon-send"></span>My travel gallery </a>
+					</li>
+				</ul>
+			</nav>
+		</div>
 			{{ content }}
 
 			<footer>
