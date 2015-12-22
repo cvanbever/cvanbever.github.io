@@ -38,7 +38,7 @@ ul {
     border-right: 3px solid rgb(255, 126, 130);
 }
 
-.profile h2 {
+#nameProfile {
     color: #fff;
     text-align: center;
     border-bottom: 1px solid rgba(255, 253, 253, 0.37);
@@ -47,9 +47,12 @@ ul {
     font-size: 23px;
 }
 
+.profile-links > li.active > a > img{
+      opacity: 1;
+}
+
 .content {
     margin-left: 220px;
-    /*background-color: */
 }
 
 .profile-info {
@@ -106,7 +109,6 @@ footer {
   padding: 10px;
 }
 
-
 .glyphicon {
   margin: 10px;
   color: #fff;
@@ -145,7 +147,7 @@ footer {
 
 .profile-links > li > a > img {
     height: 2.5em;
-    opacity: 0.7;
+    opacity: 0.6;
 }
 
 .profile-links > li {
@@ -337,7 +339,7 @@ h2.profile-header:after {
     height: 90px;
   }
 
-  .profile h2 {
+ #nameProfile {
     font-size: 20px;
   }
 

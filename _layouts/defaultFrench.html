@@ -38,10 +38,10 @@
       <aside class="profile">
         <img class="profile-picture" src="./assets/images/me2.jpg" alt="my picture"> </img>
 				<ul class="profile-links">
-					<li class="active"> <a href="/">
+					<li> <a href="/index">
 						<img alt="english" id="english" src="./assets/images/english.png"></img>
 					</a></li>
-					<li> <a href="/indexFrench">
+					<li class="active"> <a href="/">
 						<img alt="french" id="french" src="./assets/images/french.png"></img>
 					</a></li>
 				</ul>
@@ -55,17 +55,14 @@
 					</a></li>
 				</ul>
         <p class="profile-description">
-					Web developer, passionate cook, modern woman.
+					Développeuse web
 				</p>
       </aside>
 
       <nav class="collapse navbar-collapse" role="navigation" id="navBar">
         <ul class="navigation">
           <li {% if page.urlPage == '/' %} class='active'{% endif %}>
-            <a href="/" ><span class="glyphicon glyphicon-home"></span>About</a>
-          </li>
-          <li class="hidden" {% if page.urlPage == '/myGallery'%} class='active'{% endif %}>
-            <a class="nav-gallery" href="/myGallery"><span class="glyphicon glyphicon-send"></span>My travel gallery </a>
+            <a href="/" ><span class="glyphicon glyphicon-home"></span>A propos</a>
           </li>
         </ul>
       </nav>
@@ -75,10 +72,7 @@
 			<nav class="collapse" role="navigation" id="navLittleSize">
 				<ul class="navigation">
 					<li {% if page.urlPage == '/' %} class='active'{% endif %}>
-						<a href="/" ><span class="glyphicon glyphicon-home"></span>About</a>
-					</li>
-					<li class="hidden" {% if page.urlPage == '/myGallery'%} class='active'{% endif %}>
-						<a class="nav-gallery" href="/myGallery"><span class="glyphicon glyphicon-send"></span>My travel gallery </a>
+						<a href="/" ><span class="glyphicon glyphicon-home"></span>A propos</a>
 					</li>
 				</ul>
 			</nav>
